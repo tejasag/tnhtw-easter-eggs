@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>That's not how this works - Easter Eggs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Easter Eggs from Charlie Puth's
+      <a href="thatsnothowthis.works" target="_blank">thatsnothowthis.works</a>
+    </h1>
+
+    <div class="cassette_grid">
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette1.mp3"
+        data-name="Cassette 1"
+      ></div>
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette2.mp3"
+        data-name="cassette 2"
+      ></div>
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette3.mp3"
+        data-name="cassette 3"
+      ></div>
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette4.mp3"
+        data-name="cassette 4"
+      ></div>
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette5.mp3"
+        data-name="cassette 5"
+      ></div>
+      <div
+        class="cassette"
+        data-value="https://d2cstorage-a.akamaihd.net/atl/charlieputh/thatsnothowthis/cassette6.mp3"
+        data-name="cassette 6"
+      ></div>
+    </div>
+
+    <span class="c"
+      >© 2023 Copyright reserved by Charlie Puth and Atlantic Records
+    </span>
+    <script>
+      let elems = document.querySelectorAll(".cassette");
+      console.log(elems);
+      elems.forEach((e) => {
+        let link = e.dataset.value;
+        e.onclick = () => {
+          window.open(link, "_blank");
+        };
+      });
+    </script>
+  </body>
+</html>
